@@ -21,5 +21,4 @@ app.listen(3000, () => {
 //this the comment for kitty
 // this is the second commnit
 // this is the second commnit2
-// this is the second commnit2
 
