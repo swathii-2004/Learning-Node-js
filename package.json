@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+    "kitty": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sonu",
@@ -12,5 +13,8 @@
   "description": "",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
