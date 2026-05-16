@@ -1,23 +1,19 @@
+require("dotenv").config();
 const express = require("express");
+const mongoose = require("mongoose");
 
 const app = express();
+const PORT = process.env.PORT || 8080;
+const connectDB = require("./config/db.js")
 
+// database connection
+connectDB()
+
+// middleware
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.send("hello world")
+// server running 
+app.listen(PORT, () => {
+    console.log(`server is running on port ${PORT}`);
 })
-
-app.get("/name", (req, res) => {
-    res.send("my name is sonu")
-})
-
-app.get("/age", (req, res) => {
-    res.send("my age is 21")
-})
-app.listen(3000, () => {
-    console.log("server is running on port 3000");
-})
-
-
 
